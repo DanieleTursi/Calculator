@@ -9,18 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Calculator</title>
   </head>
   <body id="body">
     <header id="header">
-        <h1>CALCULATOR</h1>
+        <h1 class="animate__animated animate__fadeInTopLeft animate__slower">CALCULATOR</h1>
     </header>
     <div id="container">
-        <img id="moon" src="/moon.png" alt="moon">
-        <img id="sun" src="/sun.png" alt="sun">
-        <button id="prpl"></button>
-        <button id="yllw"></button>
-        <button id="rd"></button>
+        <img id="moon" src="/moon.png" alt="moon" class="animate__animated animate__bounceInLeft animate__slow" onmouseover="rtt(this)" onmouseleave="rttback(this)">
+        <img id="sun" src="/sun.png" alt="sun" class="animate__animated animate__bounceInLeft animate__slow"onmouseover="rtt(this)" onmouseleave="rttback(this)">
+        <button id="prpl" class="animate__animated animate__bounceInRight animate__slow" onmouseover="scl(this)" onmouseleave="sclback(this)"></button>
+        <button id="yllw" class="animate__animated animate__bounceInRight animate__slow" onmouseover="scl(this)" onmouseleave="sclback(this)"></button>
+        <button id="rd" class="animate__animated animate__bounceInRight animate__slow" onmouseover="scl(this)" onmouseleave="sclback(this)"></button>
           <div id="dis" class="display">
             <p id="prevoper"></p>
             <p id="curoper"></p>
@@ -47,7 +51,7 @@
         <button class="btncalc" id="del">)</button>
     </div>
     <footer>
-        <h4>Created By Daniele Tursi</h4>
+        <h4 class="animate__animated animate__fadeInBottomRight animate__slower">Created By Daniele Tursi</h4>
     </footer>
     <script type="text/javascript" src="/JavaScript.js"></script>
  </body>

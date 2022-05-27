@@ -6,7 +6,7 @@ body {
     min-height:100vh;
     margin:0;
     position: relative;
-    background-color: red;
+    background-color: rgb(202, 87, 255);
 }
 
 #header h1{
@@ -16,6 +16,9 @@ body {
     background-color: rgba(0, 0, 0, 0.152);
     font-family: 'Monoton', cursive;
     font-size:3vw;
+}
+#header h1:hover{
+    transform:scale(1.2);
 }
 
 #sun {
@@ -49,7 +52,7 @@ body {
 #prpl{
     grid-area:pur;
     align-self: flex-end;
-    background-color: #CA57FF;
+    background-color: rgb(202, 87, 255);
     border:solid 3px black;
     border-radius:50%;
     width: 3vw;
@@ -357,7 +360,7 @@ footer h4 {
         align-self: center;
         width: 7vh;
         height: 7vh;
-    }
+    } 
 
     #yllw{
         align-self: center;
@@ -505,3 +508,6 @@ footer h4 {
     }
 } 
 
+/* max-width 1200
+max-width 1000
+max-width 768 */
