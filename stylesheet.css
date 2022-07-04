@@ -242,8 +242,8 @@ body {
     grid-area: zero;
 }
 
-#perc{
-    grid-area: perc;
+#clbrack{
+    grid-area: clbrack;
 }
 
 #addup{
@@ -259,13 +259,13 @@ body {
     grid-area:dec;
 }
 
-#power{
-    grid-area: power;
+#opbrack{
+    grid-area: opbrack;
     
 }
 
-#del{
-    grid-area:del;
+#clbrack{
+    grid-area:clbrack;
 }
 
 #container {
@@ -277,9 +277,9 @@ body {
     ' moon one two three divis pur'
     'sun four five six mul rd'
     '. sev eig nin minus yllw'
-    '. dec zero perc addup .'
-    '. res power del ac .';
-    margin:2% 35%;
+    '. dec zero opbrack clbrack .'
+    '. res addup ac ac .';
+    margin:8% 35%;
 }
 
 footer{
@@ -320,7 +320,7 @@ footer h4 {
     }
 } */
 
-@media only screen and (max-width: 768px) and (orientation : portrait){
+@media only screen and (max-width: 792px) and (orientation : portrait){
 
     #container {
         display:grid;
@@ -331,13 +331,13 @@ footer h4 {
         ' moon one two three divis pur'
         'sun four five six mul rd'
         '. sev eig nin minus yllw'
-        '. dec zero perc addup .'
-        '. res power del ac .';
+        '. dec zero opbrack clbrack .'
+        '. res addup ac ac .';
         margin:20% 35%;
     }
 }
 
-@media (max-width:900px){
+@media (max-width:925px){
 
     #header h1{
         text-align: center;
@@ -386,10 +386,10 @@ footer h4 {
         'one two three divis '
         'four five six mul '
         'sev eig nin minus '
-        'dec zero perc addup '
-        'res power del ac '
+        'dec zero opbrack clbrack '
+        'res addup ac  ac '
         '. . moon sun';
-        margin:7% 11.5%;
+        margin:7% 13%;
     }
 
     .display { 
@@ -488,8 +488,8 @@ footer h4 {
         ' moon one two three divis pur'
         'sun four five six mul rd'
         '. sev eig nin minus yllw'
-        '. dec zero perc addup .'
-        '. res power del ac .';
+        '. dec zero opbrack clbrack .'
+        '. res addup ac  ac .';
         margin:2% 35%;
     }
 

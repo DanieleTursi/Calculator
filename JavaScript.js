@@ -128,14 +128,14 @@ buttons.map (btncalc => {
           curOper.innerText= "";
           prevOper.innerText= "";
           break;
-        case "DEL":
-          curOper.innerText= "";
+        case "MOD":
+          curOper.innerText+='/100';
+          curOper.innerText= eval(curOper.innerText);
           break;  
-  
         case "=":
          prevOper.innerText= String(curOper.innerText) + "=";
          curOper.innerText= eval(curOper.innerText);
-         curOper.innerText=Number(curOper.innerText).toFixed(2);
+         curOper.innerText= Number(curOper.innerText).toFixed(2);
         break; 
         
         default:
@@ -147,9 +147,7 @@ buttons.map (btncalc => {
 const keyBoard=document.querySelector('body');
 
 keyBoard.addEventListener('keypress', e =>{
-  switch(e.keyCode){
-
-
+  switch(e.keyCode){ 
 
     case 61:
          prevOper.innerText= String(curOper.innerText) + "=";
@@ -160,7 +158,6 @@ keyBoard.addEventListener('keypress', e =>{
     case 'Delete':
       curOper.innerText= "";
       prevOper.innerText= "";
-      console.log(e.keyCode)
       break;
 
     case 40:
@@ -261,6 +258,10 @@ function KeyCheck(event) {
             curOper.innerText= eval(curOper.innerText);
             curOper.innerText=Number(curOper.innerText).toFixed(2);
            break; 
+
+        case 53:
+          curOper.innerText += '%'
+          break;     
       
 
         default:
