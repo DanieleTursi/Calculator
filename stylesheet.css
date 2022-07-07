@@ -3,7 +3,7 @@ font-family: 'Orbitron', sans-serif; */
 
 body {
     width: 100%;
-    min-height:100vh;
+    min-height: 100vh;
     margin:0;
     position: relative;
     background-color: rgb(202, 87, 255);
@@ -12,11 +12,12 @@ body {
 #header h1{
     text-align: center;
     color:black;
-    margin:0;
+    margin:0 auto 50px auto;
     background-color: rgba(0, 0, 0, 0.152);
     font-family: 'Monoton', cursive;
-    font-size:3vw;
+    font-size:46px;
 }
+
 #header h1:hover{
     transform:scale(1.2);
 }
@@ -279,7 +280,7 @@ body {
     '. sev eig nin minus yllw'
     '. dec zero opbrack clbrack .'
     '. res addup ac ac .';
-    margin:8% 35%;
+    justify-content: center;
 }
 
 footer{
@@ -299,50 +300,14 @@ footer h4 {
     margin:0;
 }
 
-/* Media Query */
-
-/* @media only screen and (min-width: 375px) and (min-height: 667px) {
-    #container {
-        display:grid;
-        grid-gap: 0;
-        grid-template-columns: 9vh 9vh 9vh 9vh ;
-        grid-template-rows:13vh 11vh 9vh 9vh 9vh 9vh 9vh ;
-        grid-template-areas: 
-        'pur rd yllw .'
-        'dis dis dis dis '
-        'one two three divis '
-        'four five six mul '
-        'sev eig nin minus '
-        'dec zero perc addup '
-        'res power del ac '
-        '. . moon sun';
-        margin:5% 18%;
-    }
-} */
-
-@media only screen and (max-width: 792px) and (orientation : portrait){
-
-    #container {
-        display:grid;
-        grid-template-columns: 3.5vw 5.5vw 5.5vw 5.5vw 5.5vw 3.5vw;
-        grid-template-rows: 7vw 5.5vw 5.5vw 5.5vw 5.5vw 5.5vw;
-        grid-template-areas: 
-        '. dis dis dis dis .'
-        ' moon one two three divis pur'
-        'sun four five six mul rd'
-        '. sev eig nin minus yllw'
-        '. dec zero opbrack clbrack .'
-        '. res addup ac ac .';
-        margin:20% 35%;
-    }
-}
+/* MEDIA QUERIES */
 
 @media (max-width:925px){
 
     #header h1{
         text-align: center;
         color:black;
-        margin:0;
+        margin:0 auto 30px auto;
         padding:2vh 0;
         background-color: rgba(0, 0, 0, 0.152);
         font-family: 'Monoton', cursive;
@@ -490,7 +455,7 @@ footer h4 {
         '. sev eig nin minus yllw'
         '. dec zero opbrack clbrack .'
         '. res addup ac  ac .';
-        margin:2% 35%;
+        justify-content: center;
     }
 
     #moon {
