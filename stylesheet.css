@@ -15,17 +15,23 @@ body {
     margin:0 auto 50px auto;
     background-color: rgba(0, 0, 0, 0.152);
     font-family: 'Monoton', cursive;
-    font-size:46px;
+    font-size:40px;
 }
 
 #header h1:hover{
     transform:scale(1.2);
 }
 
+#flexbox {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #sun {
     grid-area: sun;
-    width:3vw;
-    height:3vw;
+    width:40px;
+    height:40px;
     margin-top:10px;
     transition: transform 1s ease-in-out;
     transform:rotate(360deg);
@@ -37,8 +43,8 @@ body {
 
 #moon {
     grid-area: moon;
-    width:2.5vw;
-    height:2.5vw;
+    width:35px;
+    height:35px;
     align-self: flex-end;
     transition: transform 1s ease-in-out;
 
@@ -56,8 +62,8 @@ body {
     background-color: rgb(202, 87, 255);
     border:solid 3px black;
     border-radius:50%;
-    width: 3vw;
-    height: 3vw;
+    width: 40px;
+    height: 40px;
     margin-left:0.8vw;
 }
 
@@ -72,8 +78,8 @@ body {
     background-color: yellow;
     border:solid 3px black;
     border-radius:50%;
-    width: 3vw;
-    height: 3vw;
+    width: 40px;
+    height: 40px;
     margin-left:0.8vw;
 }
 
@@ -88,8 +94,8 @@ body {
     background-color: red;
     border:solid 3px black;
     border-radius:50%;
-    width: 3vw;
-    height: 3vw;
+    width: 40px;
+    height: 40px;
     margin-left:0.8vw;
 }
 
@@ -271,8 +277,8 @@ body {
 
 #container {
     display:grid;
-    grid-template-columns: 3.5vw 5.5vw 5.5vw 5.5vw 5.5vw 3.5vw;
-    grid-template-rows: 7vw 5.5vw 5.5vw 5.5vw 5.5vw 5.5vw;
+    grid-template-columns: 60px 60px 60px 60px 60px 45px;
+    grid-template-rows: 80px 60px 60px 60px 60px 60px;
     grid-template-areas: 
     '. dis dis dis dis .'
     ' moon one two three divis pur'
@@ -281,13 +287,14 @@ body {
     '. dec zero opbrack clbrack .'
     '. res addup ac ac .';
     justify-content: center;
+    margin:20px;
 }
 
 footer{
     width:100%;
     text-align: center;
     color:black;
-    position:absolute;
+    position: fixed;
     bottom:0;
     padding: 1px 0;
     font-family: 'Orbitron', sans-serif; 
@@ -307,7 +314,7 @@ footer h4 {
     #header h1{
         text-align: center;
         color:black;
-        margin:0 auto 30px auto;
+        margin:0 auto 20px auto;
         padding:2vh 0;
         background-color: rgba(0, 0, 0, 0.152);
         font-family: 'Monoton', cursive;
@@ -354,7 +361,8 @@ footer h4 {
         'dec zero opbrack clbrack '
         'res addup ac  ac '
         '. . moon sun';
-        margin:7% 13%;
+        justify-content: center;
+        margin: 20px;
     }
 
     .display { 
@@ -441,37 +449,6 @@ footer h4 {
     }
     
 }
-
- @media (max-width:900px)and (orientation:landscape){
-
-    #container {
-        display:grid;
-        grid-template-columns: 3.5vw 5.5vw 5.5vw 5.5vw 5.5vw 3.5vw;
-        grid-template-rows: 7vw 5.5vw 5.5vw 5.5vw 5.5vw 5.5vw;
-        grid-template-areas: 
-        '. dis dis dis dis .'
-        ' moon one two three divis pur'
-        'sun four five six mul rd'
-        '. sev eig nin minus yllw'
-        '. dec zero opbrack clbrack .'
-        '. res addup ac  ac .';
-        justify-content: center;
-    }
-
-    #moon {
-        width:5.5vh;
-        height:5.5vh;
-        align-self: flex-end;
-        margin-right:1vh;
-    }
-
-    #sun {
-        width:6.3vh;
-        height:6.3vh;
-        align-self: flex-start;
-        margin-right: 2.5vh;
-    }
-} 
 
 /* max-width 1200
 max-width 1000
