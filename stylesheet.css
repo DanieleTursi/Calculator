@@ -155,7 +155,7 @@ body {
 
 #curoper {
     color: black;
-    font-size:3vw;
+    font-size:22px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     margin:0;
@@ -164,7 +164,7 @@ body {
 #curoperdm {
     color: white;
     background-color: trasparent;
-    font-size:3vw;
+    font-size:16px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     margin:0;
@@ -174,7 +174,7 @@ body {
 
 #prevoper {
     color: black;
-    font-size:1.5vw;
+    font-size:18px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     margin:0;   
@@ -261,6 +261,7 @@ body {
 #res{
     grid-area: res;
     border-bottom-left-radius: 15px;
+    font-size:
 }
 
 #decim{
