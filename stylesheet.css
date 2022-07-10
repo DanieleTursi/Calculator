@@ -318,7 +318,7 @@ footer p {
 
 /* MEDIA QUERIES */
 
-@media (max-width:925px){
+@media (max-width:925px) and (orientation:portrait){
 
     #header h1{
         text-align: center;
