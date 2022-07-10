@@ -115,7 +115,7 @@ body {
 
 .darkmode{
     border:2px solid white;
-    font-size:1.8vw;
+    font-size:24px;
     font-family: 'Orbitron', sans-serif;
     color:white;
     background-color: black;
@@ -261,7 +261,6 @@ body {
 #res{
     grid-area: res;
     border-bottom-left-radius: 15px;
-    font-size:
 }
 
 #decim{
@@ -348,7 +347,6 @@ footer p {
         height: 50px;
     }
 
-    
     #container {
         display:grid;
         gap: 0;
@@ -367,24 +365,6 @@ footer p {
         margin: 20px;
     }
 
-    .display { 
-        border:3px solid black;
-        border-top:6px solid black ;
-    }
-
-    .dmdis {
-        border:3px solid white;
-        border-top:6px solid white ;
-    }
-
-    .btncalc {
-        border:3px solid black;
-    }
-
-    .darkmode{
-        border:3px solid white;
-    }
-
     #sun {
         width:50px;
         height:50px;
@@ -400,41 +380,6 @@ footer p {
         margin-top:1vh;
     }
 
-    #container button{
-        font-size:3vh;   
-    }
-
-    #curoper {
-        font-size:3.5vh;
-    }
-    #curoperdm {
-        color: white;
-        background-color: trasparent;
-        font-size:3.5vh;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        margin:0;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }
-    
-    
-    #prevoper {
-        font-size:2vh;
-        
-    }
-    #prevoperdm {
-        color: white;
-        background-color: transparent;
-        font-size:2vh;
-        font-family: 'Orbitron', sans-serif;
-        text-align: center;
-        margin:0;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-    }
-
-    
 }
 
 /* max-width 1200
