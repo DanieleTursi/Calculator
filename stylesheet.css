@@ -350,7 +350,7 @@ footer p {
     
     #container {
         display:grid;
-        grid-gap: 0;
+        gap: 0;
         grid-template-columns: 9vh 9vh 9vh 9vh ;
         grid-template-rows:13vh 11vh 9vh 9vh 9vh 9vh 9vh ;
         grid-template-areas: 
