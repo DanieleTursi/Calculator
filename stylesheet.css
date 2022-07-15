@@ -184,7 +184,7 @@ body {
 #prevoperdm {
     color: white;
     background-color: transparent;
-    font-size:1.5vw;
+    font-size:18px;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
     margin:0;
@@ -277,6 +277,8 @@ body {
     grid-area:clbrack;
 }
 
+
+
 #container {
     display:grid;
     grid-template-columns: 60px 60px 60px 60px 60px 60px;
@@ -328,6 +330,21 @@ footer p {
         background-color: rgba(0, 0, 0, 0.152);
         font-family: 'Monoton', cursive;
         font-size:4vh;
+    }
+    #curoper {
+        font-size:18px;
+    }
+    
+    #curoperdm {
+        font-size:18px;
+    }
+    
+    #prevoper {
+        font-size:20px;
+    }
+    
+    #prevoperdm {
+        font-size:20px;
     }
 
     #prpl{
