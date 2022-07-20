@@ -128,10 +128,6 @@ buttons.map (btncalc => {
           curOper.innerText= "";
           prevOper.innerText= "";
           break;
-        case "MOD":
-          curOper.innerText+='/100';
-          curOper.innerText= eval(curOper.innerText);
-          break;  
         case "=":
          prevOper.innerText= String(curOper.innerText) + "=";
          curOper.innerText= eval(curOper.innerText);
@@ -246,24 +242,16 @@ function KeyCheck(event) {
           curOper.innerText= "";
           prevOper.innerText= "";
           break;
-    
         case 46:
           curOper.innerText= "";
           prevOper.innerText= "";
           console.log(e.keyCode)
           break;
-
         case 13:
             prevOper.innerText= String(curOper.innerText) + "=";
             curOper.innerText= eval(curOper.innerText);
             curOper.innerText=Number(curOper.innerText).toFixed(2);
            break; 
-
-        case 53:
-          curOper.innerText += '%'
-          break;     
-      
-
         default:
           console.log(KeyID)
           break;
